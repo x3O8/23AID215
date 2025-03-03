@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 3</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .box {
+            flex: 1 1 200px;
+            max-width: 300px;
+            border: 2px solid lightgreen;
+            padding: 5px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .box {
+                flex: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><img src="fish1.jpg" alt="Image 1"></div>
+        <div class="box"><img src="fish2.jpg" alt="Image 2"></div>
+        <div class="box"><img src="fish3.jpg" alt="Image 3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto 1fr 1fr;
+            gap: 10px;
+            min-height: 100vh;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            background-color: #fcd5fc;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #999;
+        }
+
+        .left-main {
+            grid-row: 2 / 4;
+            background-color: #fcd5fc;
+            padding: 20px;
+            border: 1px solid #999;
+        }
+
+        .aside2 {
+            background-color: #fcd5fc;
+            padding: 20px;
+            border: 1px solid #999;
+        }
+
+        .aside1 {
+            background-color: #fcd5fc;
+            padding: 20px;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="left-main">Left Main Content</div>
+        <div class="aside2">Aside2</div>
+        <div class="aside1">Aside1</div>
+    </div>
+</body>
+</html>

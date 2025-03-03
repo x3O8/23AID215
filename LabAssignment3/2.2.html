@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2.2 Landing Page</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .header {
+            grid-column: 1 / -1;
+            background-color: rgb(255, 158, 227);
+            padding: 20px;
+            text-align: center;
+        }
+        .landing {
+            grid-column: 1 / -1;
+            background-color: rgb(255, 158, 227);
+            padding: 30px;
+            text-align: center;
+        }
+        .about, .vision, .contact {
+            background-color: rgb(255, 158, 227);
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class = 'landing'>Landing Page</div>
+        <div class="about">About Us</div>
+        <div class="vision">Vision</div>
+        <div class="contact">Contact Us</div>
+    </div>
+</body>
+</html>

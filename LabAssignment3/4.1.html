@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .responsive-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Default image styling */
+        .responsive-image {
+            content: url('breakingbad.jpg');
+        }
+
+        @media (max-width: 600px) {
+            .responsive-image {
+                content: url('breakingbad2.jpg');
+            }
+        }
+
+        @media (min-width: 1500px) {
+            .responsive-image {
+                content: url('breakingbad3.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="responsive-image" alt="Responsive content image">
+</body>
+</html>

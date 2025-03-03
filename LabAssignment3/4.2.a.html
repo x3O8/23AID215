@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Club Website</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            gap: 15px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .club-heading {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            grid-row: 2;
+            grid-column: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .intro {
+            grid-row: 2;
+            grid-column: 2;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        .organized {
+            grid-row: 2;
+            grid-column: 3;
+            align-self: start;
+            padding: 15px;
+            background: #e0e0e0;
+            border-radius: 8px;
+        }
+
+        .links a {
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .links a:hover {
+            background: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .links, .intro, .organized {
+                grid-column: 1;
+                grid-row: auto;
+            }
+            
+            .organized {
+                order: 3;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <h1 class="club-heading">CLUB Website</h1>
+        
+        <div class="links">
+            <a href="4.2.a.html">Link1</a>
+            <a href="4.2.b.html">Link2</a>
+            <a href="4.2.c.html">Link3</a>
+        </div>
+
+        <div class="intro">
+            <h2>Introduction to the Club</h2>
+            <p>Welcome to our vibrant community! We are dedicated to fostering creativity and innovation through various activities and events. Our club offers:</p>
+            <ul>
+                <li>Weekly workshops</li>
+                <li>Networking events</li>
+                <li>Skill development sessions</li>
+            </ul>
+            <p>Join us to be part of an exciting journey of learning and growth!</p>
+        </div>
+
+        <div class="organized">
+            <h3>Organized By</h3>
+            <p>Amrita Student Committee<br>
+            Contact: club@amrita.edu<br>
+            Established: 2015</p>
+        </div>
+    </div>
+</body>
+</html>
