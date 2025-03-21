@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="output"></div>
+    <script>
+        const books = [
+            { title: "Book1", author: "Mahatma Gandhi", cost: 600 },
+            { title: "Book2", author: "Author2", cost: 450 },
+            { title: "Book3", author: "Mahatma Gandhi", cost: 700 }
+        ];
+        
+        // Part a
+        const expensiveBooks = books.filter(book => book.cost > 500);
+        console.log("Expensive Books:", expensiveBooks);
+        
+        // Part b
+        const gandhiBooks = books.filter(book => book.author === "Mahatma Gandhi");
+        console.log("Gandhi Books:", gandhiBooks);
+
+        let output = "Expensive Books:<br>";
+        expensiveBooks.forEach(book => output += `${book.title}<br>`);
+        output += "<br>Books by Gandhi:<br>";
+        gandhiBooks.forEach(book => output += `${book.title}<br>`);
+        
+        document.getElementById('output').innerHTML = output;
+    </script>
+</body>
+</html>

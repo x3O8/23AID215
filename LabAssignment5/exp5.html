@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="result"></div>
+    <script>
+        const today = new Date();
+        const nextYear = new Date(today.getFullYear() + 1, 0, 1);
+        const diff = nextYear - today;
+        const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+        console.log(`Days left: ${daysLeft}`);
+        document.getElementById('result').textContent = `${daysLeft} days left`;
+    </script>
+</body>
+</html>

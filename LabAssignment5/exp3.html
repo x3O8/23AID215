@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="output"></div>
+    <script>
+        const sentence = prompt("Enter a sentence:");
+        const capitalized = sentence.split(' ').map(word => 
+            word[0].toUpperCase() + word.slice(1)
+        ).join(' ');
+        console.log(capitalized);
+        document.getElementById('output').textContent = capitalized;
+    </script>
+</body>
+</html>

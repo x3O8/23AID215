@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="result"></div>
+    <script>
+        const temp = parseFloat(prompt("Enter temperature:"));
+        let category;
+        if (temp < 0) category = "Freezing";
+        else if (temp <= 15) category = "Cold";
+        else if (temp <= 30) category = "Moderate";
+        else category = "Hot";
+        console.log(category);
+        document.getElementById('result').textContent = category;
+    </script>
+</body>
+</html>

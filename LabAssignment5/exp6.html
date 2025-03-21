@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="date"></div>
+    <script>
+        const months = ["January", "February", "March", "April", "May", "June",
+                       "July", "August", "September", "October", "November", "December"];
+        const today = new Date();
+        const formatted = `Today's date is: ${today.getDate()} ${months[today.getMonth()]} ${today.getFullYear()}`;
+        console.log(formatted);
+        document.getElementById('date').textContent = formatted;
+    </script>
+</body>
+</html>
